@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LILI CAKE — Form Pemesanan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="bar container">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Logo LILI CAKE" class="brand-logo" />
+        <h1>LILI CAKE</h1>
+      </div>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a class="nav-link" href="home.html">Home</a>
+        <a class="nav-link" href="tabel_menu.html">Menu</a>
+        <a class="nav-link is-active" href="form_order.html" aria-current="page">Pesan</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main-content" role="main">
+    <h2 class="section-title" id="form-title">
+        <img src="assets/keranjang.png" alt="Ikon keranjang belanja" class="title-icon">
+        Form Pemesanan
+    </h2>
+
+    <form class="form" action="#" method="post" aria-labelledby="form-title">
+      <fieldset class="form-set">
+        <legend>Data Pemesan</legend>
+        <label>Nama
+          <input type="text" name="nama" required placeholder="Nama lengkap" autocomplete="name" />
+        </label>
+        <label>No. WhatsApp
+          <input type="tel" name="wa" required placeholder="08xxxxxxxxxx" inputmode="tel" autocomplete="tel" />
+        </label>
+        <label>Alamat
+          <input type="text" name="alamat" required placeholder="Alamat pengantaran / ambil sendiri" autocomplete="street-address" />
+        </label>
+        <label>Metode
+          <select name="metode" required>
+            <option>Ambil di toko</option>
+            <option>Antar (hanya untuk daerah sini)</option>
+          </select>
+        </label>
+        <label>Tanggal/Jam Ambil
+          <input type="datetime-local" name="waktu" required />
+        </label>
+        <label>Menu Pesanan
+          <textarea name="Menu-pesanan" rows="3" placeholder="Contoh: cupcake, macaroon, dsb." ></textarea>
+        </label>
+        <label>Catatan
+          <textarea name="catatan" rows="3" placeholder="Contoh: tanpa stroberi, ucapan, dsb."></textarea>
+        </label>
+      </fieldset>
+
+      <div class="form-actions">
+        <button class="btn primary" type="submit">Kirim Pesanan</button>
+        <a class="btn" href="tabel_menu.html">Kembali ke Menu</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer" role="contentinfo" flex="center">
+    <p>Terima kasih sudah memesan di lili cake lov</p>
+  </footer>
+</body>
+</html>
