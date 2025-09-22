@@ -1,1 +1,1 @@
-Tugas PWEB. Website 2 halaman (Home, Menu/Pesan). Ada **tabel** menu dan **form** pemesanan.
+Tugas PWEB. Website dengan 3 halaman Home, Menu dan Pesan. Ada **tabel** menu dan **form** pemesanan.
